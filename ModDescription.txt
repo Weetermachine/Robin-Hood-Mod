@@ -1,0 +1,26 @@
+Robin Hood Mode
+===============
+At the start of each turn, a percentage of the richest player's income is taken and given to the poorest player, keeping the game competitive and preventing runaway leaders from snowballing unchecked.
+
+How it works
+------------
+Each turn, the mod compares the highest and lowest incomes among all active players. If the richest player earns enough more than the poorest to exceed the configured threshold, a percentage of the richest player's income is added to the poorest player's deployment for that turn.
+
+The transfer appears in the orders list so all players can see it happened.
+
+Settings
+--------
+- Transfer percentage: how much of the richest player's income to redistribute. At 10%, a player earning 50 armies gives away 5.
+- Threshold percentage: how much richer the top player must be before Robin Hood triggers. At 10%, the richest must earn at least 10% more than the poorest. This prevents the mod from firing every turn in a balanced game.
+- Rounding: whether to round the transfer amount up or down when it's not a whole number. Defaults to round up.
+
+Ties
+----
+If multiple players are tied for the highest income, each of them contributes the transfer amount. If multiple players are tied for the lowest income, each of them receives the full transfer amount independently.
+
+Tips
+----
+- A low threshold (e.g. 5%) means Robin Hood fires frequently, keeping the game very balanced.
+- A high threshold (e.g. 50%) means it only kicks in when someone is dominant, acting more as a catch-up mechanic than a constant balancer.
+- A high transfer percentage can be punishing for the leader — use it for games where you want aggressive rebalancing.
+- This mod has no effect on cards or territories, only on armies deployed per turn.
